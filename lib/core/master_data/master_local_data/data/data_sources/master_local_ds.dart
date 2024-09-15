@@ -39,7 +39,8 @@ class MasterLocalDsImpl implements MasterLocalDs{
   Future<UserModel> getUser(UserModel userModel) async {
     final db = await database;
     // retrieve data user
-    if(userModel.userId != null){
+    if(userModel.userId != 0){
+
       final checkUser = await db.query(
           _tableUser,
           where: 'userId = ?',

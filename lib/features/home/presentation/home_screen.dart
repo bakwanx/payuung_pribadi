@@ -6,6 +6,7 @@ import 'package:payuung_pribadi/features/home/presentation/cubit/home_cubit.dart
 import 'package:payuung_pribadi/features/home/presentation/widgets/category_item.dart';
 import 'package:payuung_pribadi/features/home/presentation/widgets/financial_product_item.dart';
 import 'package:payuung_pribadi/features/home/presentation/widgets/wellness_item.dart';
+import 'package:payuung_pribadi/features/profile/domain/repositories/profile_navigation_repository.dart';
 import 'package:payuung_pribadi/utils/themes/theme.dart';
 import 'package:payuung_pribadi/utils/themes/typography_text_style.dart';
 
@@ -36,20 +37,27 @@ class _HomeScreenUIState extends State<HomeScreenUI> {
     appBar() {
       return AppBar(
         backgroundColor: CustomColor.yellowColor,
-        title: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text(
-              "Selamat Datang",
-              style: TypographyTextStyle.bodyRegular1
-                  .copyWith(color: Colors.white),
-            ),
-            Text(
-              "Farhan",
-              style: TypographyTextStyle.subHeadingBold1
-                  .copyWith(color: Colors.white),
-            ),
-          ],
+        title: BlocBuilder<HomeCubit, HomeState>(
+          buildWhen: (previous, current) {
+            return previous != current;
+          },
+          builder: (context, state) {
+            return Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  "Selamat Datang",
+                  style: TypographyTextStyle.bodyRegular1
+                      .copyWith(color: Colors.white),
+                ),
+                Text(
+                  state.userEntity.fullname,
+                  style: TypographyTextStyle.subHeadingBold1
+                      .copyWith(color: Colors.white),
+                ),
+              ],
+            );
+          },
         ),
         actions: [
           const Icon(
@@ -58,27 +66,35 @@ class _HomeScreenUIState extends State<HomeScreenUI> {
             color: Colors.white,
           ),
           InkWell(
-            onTap: (){
-
+            onTap: () {
+              di<ProfileNavigationRepository>().goToProfile(context);
             },
-            child: Container(
-              width: 40.0,
-              height: 40.0,
-              margin: const EdgeInsets.symmetric(
-                horizontal: 16,
-              ),
-              decoration: const BoxDecoration(
-                color: Color(0xff7c94b6),
-                borderRadius: BorderRadius.all(Radius.circular(50.0)),
-              ),
-              child: Center(
-                  child: Text(
-                "F",
-                style: TypographyTextStyle.headingBold1.copyWith(
-                  fontSize: 18,
-                  color: Colors.white,
-                ),
-              )),
+            child: BlocBuilder<HomeCubit, HomeState>(
+              buildWhen: (previous, current) {
+                return previous != current && current.userEntity.fullname.isNotEmpty;
+              },
+              builder: (context, state) {
+                return Container(
+                  width: 40.0,
+                  height: 40.0,
+                  margin: const EdgeInsets.symmetric(
+                    horizontal: 16,
+                  ),
+                  decoration: const BoxDecoration(
+                    color: Color(0xff7c94b6),
+                    borderRadius: BorderRadius.all(Radius.circular(50.0)),
+                  ),
+                  child: Center(
+                    child: Text(
+                      "F",
+                      style: TypographyTextStyle.headingBold1.copyWith(
+                        fontSize: 18,
+                        color: Colors.white,
+                      ),
+                    ),
+                  ),
+                );
+              },
             ),
           )
         ],
@@ -87,9 +103,7 @@ class _HomeScreenUIState extends State<HomeScreenUI> {
 
     Widget financialProduct() {
       return InkWell(
-        onTap: (){
-          debugPrint("pesan onclick");
-        },
+        onTap: () {},
         child: Container(
           margin: const EdgeInsets.only(
             top: 30,

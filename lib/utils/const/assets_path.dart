@@ -1,6 +1,9 @@
 import 'package:payuung_pribadi/utils/ext/asssets_path_ext.dart';
 
 final logo = "logo".svg();
+final iPersonalInfo = "i_personal_info".svg();
+final iLogOut = "i_log_out".svg();
+final iOpenCamera = "i_open_camera".svg();
 final ilIntro1 = "il_intro_1".svg();
 final ilIntro2 = "il_intro_2".svg();
 final ilIntro3 = "il_intro_3".svg();

@@ -79,6 +79,7 @@ extension WellnessModelMapper on WellnessModel {
 extension UserEntityMapper on UserEntity {
   UserModel toModel() {
     return UserModel(
+      userId: userId,
       imgPath: imgPath.orEmpty(),
       fullname: fullname.orEmpty(),
       bornDate: bornDate.orEmpty(),

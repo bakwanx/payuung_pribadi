@@ -40,7 +40,6 @@ class _SplashScreenUIState extends State<SplashScreenUI> {
             di<OnBoardingNavigationRepository>().goToOnBoardingScreen(context);
             return;
           }
-          debugPrint("pesan ${state.isFirstTime} ${state.isLogin}");
           if (!state.isFirstTime && !state.isLogin) {
             di<AuthNavigationRepository>().goToEmailLoginScreen(context);
             return;

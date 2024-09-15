@@ -3,6 +3,7 @@ import 'package:get_it/get_it.dart';
 import 'package:payuung_pribadi/core/master_data/master_data_module.dart';
 import 'package:payuung_pribadi/features/base_home/base_home_module.dart';
 import 'package:payuung_pribadi/features/onboarding/on_boarding_module.dart';
+import 'package:payuung_pribadi/features/profile/profile_module.dart';
 import 'package:payuung_pribadi/features/splash/splash_module.dart';
 
 import '../features/auth/auth_module.dart';
@@ -21,6 +22,7 @@ Future<void> initDependency() async {
   final AuthModule _authModule = AuthModule();
   final HomeModule _homeModule = HomeModule();
   final BaseHomeModule _baseHomeModule = BaseHomeModule();
+  final ProfileModule _profileModule = ProfileModule();
 
   await _navigationModule();
   await _masterDataModule();
@@ -29,4 +31,5 @@ Future<void> initDependency() async {
   await _authModule();
   await _homeModule();
   await _baseHomeModule();
+  await _profileModule();
 }

@@ -8,6 +8,6 @@ class HomeModule {
     // USECASE
     di.registerFactory(() => HomeUseCase());
     //CUBIT
-    di.registerFactory(() => HomeCubit(di(), di()));
+    di.registerFactory(() => HomeCubit(di(), di(),di()));
   }
 }

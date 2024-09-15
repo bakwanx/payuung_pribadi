@@ -23,6 +23,7 @@ mixin _$HomeState {
       throw _privateConstructorUsedError;
   List<WellnessEntity> get wellnessEntities =>
       throw _privateConstructorUsedError;
+  UserEntity get userEntity => throw _privateConstructorUsedError;
   bool get loading => throw _privateConstructorUsedError;
 
   @JsonKey(ignore: true)
@@ -40,7 +41,10 @@ abstract class $HomeStateCopyWith<$Res> {
       List<FinancialItemEntity> financialItemEntities,
       List<CategoryItemEntity> categoryItemEntities,
       List<WellnessEntity> wellnessEntities,
+      UserEntity userEntity,
       bool loading});
+
+  $UserEntityCopyWith<$Res> get userEntity;
 }
 
 /// @nodoc
@@ -60,6 +64,7 @@ class _$HomeStateCopyWithImpl<$Res, $Val extends HomeState>
     Object? financialItemEntities = null,
     Object? categoryItemEntities = null,
     Object? wellnessEntities = null,
+    Object? userEntity = null,
     Object? loading = null,
   }) {
     return _then(_value.copyWith(
@@ -79,11 +84,23 @@ class _$HomeStateCopyWithImpl<$Res, $Val extends HomeState>
           ? _value.wellnessEntities
           : wellnessEntities // ignore: cast_nullable_to_non_nullable
               as List<WellnessEntity>,
+      userEntity: null == userEntity
+          ? _value.userEntity
+          : userEntity // ignore: cast_nullable_to_non_nullable
+              as UserEntity,
       loading: null == loading
           ? _value.loading
           : loading // ignore: cast_nullable_to_non_nullable
               as bool,
     ) as $Val);
+  }
+
+  @override
+  @pragma('vm:prefer-inline')
+  $UserEntityCopyWith<$Res> get userEntity {
+    return $UserEntityCopyWith<$Res>(_value.userEntity, (value) {
+      return _then(_value.copyWith(userEntity: value) as $Val);
+    });
   }
 }
 
@@ -100,7 +117,11 @@ abstract class _$$SplashStateImplCopyWith<$Res>
       List<FinancialItemEntity> financialItemEntities,
       List<CategoryItemEntity> categoryItemEntities,
       List<WellnessEntity> wellnessEntities,
+      UserEntity userEntity,
       bool loading});
+
+  @override
+  $UserEntityCopyWith<$Res> get userEntity;
 }
 
 /// @nodoc
@@ -118,6 +139,7 @@ class __$$SplashStateImplCopyWithImpl<$Res>
     Object? financialItemEntities = null,
     Object? categoryItemEntities = null,
     Object? wellnessEntities = null,
+    Object? userEntity = null,
     Object? loading = null,
   }) {
     return _then(_$SplashStateImpl(
@@ -137,6 +159,10 @@ class __$$SplashStateImplCopyWithImpl<$Res>
           ? _value._wellnessEntities
           : wellnessEntities // ignore: cast_nullable_to_non_nullable
               as List<WellnessEntity>,
+      userEntity: null == userEntity
+          ? _value.userEntity
+          : userEntity // ignore: cast_nullable_to_non_nullable
+              as UserEntity,
       loading: null == loading
           ? _value.loading
           : loading // ignore: cast_nullable_to_non_nullable
@@ -153,6 +179,7 @@ class _$SplashStateImpl extends _SplashState {
       final List<FinancialItemEntity> financialItemEntities = const [],
       final List<CategoryItemEntity> categoryItemEntities = const [],
       final List<WellnessEntity> wellnessEntities = const [],
+      this.userEntity = const UserEntity(),
       this.loading = false})
       : _financialItemEntities = financialItemEntities,
         _categoryItemEntities = categoryItemEntities,
@@ -193,11 +220,14 @@ class _$SplashStateImpl extends _SplashState {
 
   @override
   @JsonKey()
+  final UserEntity userEntity;
+  @override
+  @JsonKey()
   final bool loading;
 
   @override
   String toString() {
-    return 'HomeState(error: $error, financialItemEntities: $financialItemEntities, categoryItemEntities: $categoryItemEntities, wellnessEntities: $wellnessEntities, loading: $loading)';
+    return 'HomeState(error: $error, financialItemEntities: $financialItemEntities, categoryItemEntities: $categoryItemEntities, wellnessEntities: $wellnessEntities, userEntity: $userEntity, loading: $loading)';
   }
 
   @JsonKey(ignore: true)
@@ -213,6 +243,7 @@ abstract class _SplashState extends HomeState {
       final List<FinancialItemEntity> financialItemEntities,
       final List<CategoryItemEntity> categoryItemEntities,
       final List<WellnessEntity> wellnessEntities,
+      final UserEntity userEntity,
       final bool loading}) = _$SplashStateImpl;
   _SplashState._() : super._();
 
@@ -224,6 +255,8 @@ abstract class _SplashState extends HomeState {
   List<CategoryItemEntity> get categoryItemEntities;
   @override
   List<WellnessEntity> get wellnessEntities;
+  @override
+  UserEntity get userEntity;
   @override
   bool get loading;
   @override

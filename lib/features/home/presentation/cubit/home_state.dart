@@ -10,6 +10,7 @@ class HomeState with _$HomeState implements PayuungBaseState  {
     @Default([]) List<FinancialItemEntity> financialItemEntities,
     @Default([]) List<CategoryItemEntity> categoryItemEntities,
     @Default([]) List<WellnessEntity> wellnessEntities,
+    @Default(UserEntity()) UserEntity userEntity,
     @Default(false) bool loading,
   }) = _SplashState;
 
