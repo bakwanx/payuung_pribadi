@@ -1,0 +1,57 @@
+[
+  {
+    "imgName": "assets/images/img1.jpeg",
+    "title": "Voucher Digital Bakmi GM RP.10.000",
+    "category": "Voucher Digital",
+    "price": 10000,
+    "minBuy": 2,
+    "maxBuy": 5,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin elit risus, ornare eu efficitur ut, fermentum non sapien. Cras vulputate lorem enim, et porttitor lorem semper vel. Nulla id pellentesque enim. Donec aliquam arcu non luctus porttitor. Nam non justo sed turpis sollicitudin sollicitudin. Sed efficitur leo non dui vulputate, tristique fermentum arcu vulputate. Sed dignissim venenatis ultrices. Phasellus malesuada, nibh non interdum bibendum, lacus ligula molestie nunc, quis ullamcorper libero est rhoncus nisl. In sit amet lectus laoreet, fermentum mauris quis, finibus lacus. Nullam ac varius odio. Suspendisse finibus tortor eu nunc ullamcorper, vitae varius urna maximus. Sed interdum nunc ac semper viverra."
+  },
+  {
+    "imgName": "assets/images/img2.jpeg",
+    "title": "Voucher Digital Grab Transport RP.5.000",
+    "category": "Voucher Digital",
+    "price": 5000,
+    "minBuy": 2,
+    "maxBuy": 5,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin elit risus, ornare eu efficitur ut, fermentum non sapien. Cras vulputate lorem enim, et porttitor lorem semper vel. Nulla id pellentesque enim. Donec aliquam arcu non luctus porttitor. Nam non justo sed turpis sollicitudin sollicitudin. Sed efficitur leo non dui vulputate, tristique fermentum arcu vulputate. Sed dignissim venenatis ultrices. Phasellus malesuada, nibh non interdum bibendum, lacus ligula molestie nunc, quis ullamcorper libero est rhoncus nisl. In sit amet lectus laoreet, fermentum mauris quis, finibus lacus. Nullam ac varius odio. Suspendisse finibus tortor eu nunc ullamcorper, vitae varius urna maximus. Sed interdum nunc ac semper viverra."
+  },
+  {
+    "imgName": "assets/images/img3.jpeg",
+    "title": "Voucher Digital H&M RP.10.000",
+    "category": "Voucher Digital",
+    "price": 10000,
+    "minBuy": 2,
+    "maxBuy": 5,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin elit risus, ornare eu efficitur ut, fermentum non sapien. Cras vulputate lorem enim, et porttitor lorem semper vel. Nulla id pellentesque enim. Donec aliquam arcu non luctus porttitor. Nam non justo sed turpis sollicitudin sollicitudin. Sed efficitur leo non dui vulputate, tristique fermentum arcu vulputate. Sed dignissim venenatis ultrices. Phasellus malesuada, nibh non interdum bibendum, lacus ligula molestie nunc, quis ullamcorper libero est rhoncus nisl. In sit amet lectus laoreet, fermentum mauris quis, finibus lacus. Nullam ac varius odio. Suspendisse finibus tortor eu nunc ullamcorper, vitae varius urna maximus. Sed interdum nunc ac semper viverra."
+  },
+  {
+    "imgName": "assets/images/img4.jpeg",
+    "title": "Voucher Digital Exelso RP.10.000",
+    "category": "Voucher Digital",
+    "price": 10000,
+    "minBuy": 2,
+    "maxBuy": 5,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin elit risus, ornare eu efficitur ut, fermentum non sapien. Cras vulputate lorem enim, et porttitor lorem semper vel. Nulla id pellentesque enim. Donec aliquam arcu non luctus porttitor. Nam non justo sed turpis sollicitudin sollicitudin. Sed efficitur leo non dui vulputate, tristique fermentum arcu vulputate. Sed dignissim venenatis ultrices. Phasellus malesuada, nibh non interdum bibendum, lacus ligula molestie nunc, quis ullamcorper libero est rhoncus nisl. In sit amet lectus laoreet, fermentum mauris quis, finibus lacus. Nullam ac varius odio. Suspendisse finibus tortor eu nunc ullamcorper, vitae varius urna maximus. Sed interdum nunc ac semper viverra."
+  },
+  {
+    "imgName": "assets/images/img5.jpeg",
+    "title": "Voucher Digital Indomaret RP.10.000",
+    "category": "Voucher Digital",
+    "price": 10000,
+    "minBuy": 1,
+    "maxBuy": 3,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin elit risus, ornare eu efficitur ut, fermentum non sapien. Cras vulputate lorem enim, et porttitor lorem semper vel. Nulla id pellentesque enim. Donec aliquam arcu non luctus porttitor. Nam non justo sed turpis sollicitudin sollicitudin. Sed efficitur leo non dui vulputate, tristique fermentum arcu vulputate. Sed dignissim venenatis ultrices. Phasellus malesuada, nibh non interdum bibendum, lacus ligula molestie nunc, quis ullamcorper libero est rhoncus nisl. In sit amet lectus laoreet, fermentum mauris quis, finibus lacus. Nullam ac varius odio. Suspendisse finibus tortor eu nunc ullamcorper, vitae varius urna maximus. Sed interdum nunc ac semper viverra."
+  },
+  {
+    "imgName": "assets/images/img2.jpeg",
+    "title": "Voucher Digital Grab Transport RP.20.000",
+    "category": "Voucher Digital",
+    "price": 20000,
+    "minBuy": 2,
+    "maxBuy": 50,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin elit risus, ornare eu efficitur ut, fermentum non sapien. Cras vulputate lorem enim, et porttitor lorem semper vel. Nulla id pellentesque enim. Donec aliquam arcu non luctus porttitor. Nam non justo sed turpis sollicitudin sollicitudin. Sed efficitur leo non dui vulputate, tristique fermentum arcu vulputate. Sed dignissim venenatis ultrices. Phasellus malesuada, nibh non interdum bibendum, lacus ligula molestie nunc, quis ullamcorper libero est rhoncus nisl. In sit amet lectus laoreet, fermentum mauris quis, finibus lacus. Nullam ac varius odio. Suspendisse finibus tortor eu nunc ullamcorper, vitae varius urna maximus. Sed interdum nunc ac semper viverra."
+  }
+
+]
